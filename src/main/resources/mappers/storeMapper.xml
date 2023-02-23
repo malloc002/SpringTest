@@ -4,9 +4,9 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-  <mapper namespace="com.malloc.spring.test.database.dao.StoreDAO">
+<mapper namespace="com.malloc.spring.test.database.dao.StoreDAO">
   
-  	<select id="selectStoreList" resultType="com.malloc.spring.test.database.model.Store">
+	<select id="selectStoreList" resultType="com.malloc.spring.test.database.model.Store">
   		SELECT
             `id`
             , `name`
