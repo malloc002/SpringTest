@@ -70,7 +70,7 @@ public class RealEstateController {
 	
 	@ResponseBody
 	@RequestMapping("/test03")
-	public String update() {
+	public String updateRealEstate() {
 		
 		int count = realEstateBO.getUpdateRealEstate(24, "전세", 70000);
 		
@@ -79,7 +79,7 @@ public class RealEstateController {
 	
 	@ResponseBody
 	@RequestMapping("/test04")
-	public String delete(@RequestParam("id") int id) {
+	public String deleteRealEstate(@RequestParam("id") int id) {
 		
 		int count = realEstateBO.getDeleteRealEstate(id);
 		
