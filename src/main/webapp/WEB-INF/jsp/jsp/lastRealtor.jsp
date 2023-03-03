@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>사용자 정보</title>
+<title>공인중개사 정보</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -15,11 +15,18 @@
 </head>
 <body>
 	<div class="container">
-		<h1>판매자 정보</h1>
-		<img width="300" src="${seller.profileImage }">
-		<div class="display-4">${seller.nickname }</div>
-		<h2 class="text-warning">${seller.temperature }</h2>
+		<h1>공인중개사 정보</h1>
+		<hr>
+		<span class="font-weight-bold">ID</span>
+		<hr>
+		<span class="font-weight-bold">상호명</span>
+		<hr>
+		<span class="font-weight-bold">전화 번호</span>
+		<hr>
+		<span class="font-weight-bold">주소</span>
+		<hr>
+		<span class="font-weight-bold">등급</span>
+		<hr>
 	</div>
-	
 </body>
 </html>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>사용자 정보</title>
+<title>공인중개사 추가</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -15,11 +15,19 @@
 </head>
 <body>
 	<div class="container">
-		<h1>판매자 정보</h1>
-		<img width="300" src="${seller.profileImage }">
-		<div class="display-4">${seller.nickname }</div>
-		<h2 class="text-warning">${seller.temperature }</h2>
+		<h1>공인중개사 추가</h1>
+		<form method="post" action="/jsp/realtor/add">
+			<label>상호명</label><br>
+			<input type="text" name="office"><br>
+			<label>전화번호</label><br>
+			<input type="text" name="phoneNumber"><br>
+			<label>주소</label><br>
+			<input type="text" name="address"><br>
+			<label>등급</label><br>
+			<input type="text" name="grade"><br>
+			<button type="submit">추가</button>
+		</form>
+		
 	</div>
-	
 </body>
 </html>

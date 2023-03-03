@@ -24,9 +24,8 @@ public class SellerController {
 	public String addSeller(
 			@RequestParam("nickname") String nickname
 			, @RequestParam("profileImage") String profileImage
-			, @RequestParam("temperature") String tString) {
-		
-		double temperature = Double.parseDouble(tString);
+			, @RequestParam("temperature") double temperature) {
+
 		
 		int count = sellerBO.getAddSeller(nickname, profileImage, temperature);
 		
@@ -39,22 +38,19 @@ public class SellerController {
 		return "jsp/sellerInput";
 	}
 	
-	@GetMapping("/seller_info")
-	public String sellerInfo() {
+	@GetMapping("/sellerInfo")
+	public String sellerInfo(@RequestParam(value="id", required=false, defaultValue="-1") int id, Model model) {
 		
-		return "jsp/sellerInfo";
-	}
-	
-	@GetMapping("/lastSeller")
-	public String lastSeller(@RequestParam(value="id", required=false, defaultValue="-1") int id, Model model) {
+		//int 에는 null을 저장 못하는데 Integer에는 null 저장 가능
 		
 		Seller seller;
 		
+		//id 파라미터가 없으면 최근 판매자 결과 보여주기
 		if(id == -1)
 		{
 			seller = sellerBO.getLastSeller();
 		}
-		else {
+		else { //id 파라미터가 있으면 id로 조회한 결과 보여주기
 			seller = sellerBO.getSellerById(id);
 		}
 		

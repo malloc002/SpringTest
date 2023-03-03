@@ -41,7 +41,7 @@
 			1
 	</select>
 	
-	<select id="selectSellerById" resultType="com.malloc.spring.test.jsp.model.Seller">
+	<select id="selectSellerById" parameterType="int" resultType="com.malloc.spring.test.jsp.model.Seller">
 		SELECT
 			`id`
 			, `nickname`
