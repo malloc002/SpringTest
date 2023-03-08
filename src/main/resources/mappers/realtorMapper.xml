@@ -6,7 +6,8 @@
   
 <mapper namespace="com.malloc.spring.test.jsp.dao.RealtorDAO">
 
-	<insert id="insertRealtor" parameterType="com.malloc.spring.test.jsp.model.Realtor">
+	<insert id="insertRealtor" parameterType="com.malloc.spring.test.jsp.model.Realtor"
+	useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO
 			`realtor`
 		(

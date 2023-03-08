@@ -16,16 +16,16 @@
 <body>
 	<div class="container">
 		<h1>공인중개사 추가</h1>
-		<form method="post" action="/jsp/realtor/add">
+		<form method="get" action="/jsp/realtor/add">
 			<label>상호명</label><br>
-			<input type="text" name="office"><br>
+			<input type="text" class="form-control w-50" name="office"><br>
 			<label>전화번호</label><br>
-			<input type="text" name="phoneNumber"><br>
+			<input type="text" class="form-control w-50" name="phoneNumber"><br>
 			<label>주소</label><br>
-			<input type="text" name="address"><br>
+			<input type="text" class="form-control w-50" name="address"><br>
 			<label>등급</label><br>
-			<input type="text" name="grade"><br>
-			<button type="submit">추가</button>
+			<input type="text" class="form-control w-50" name="grade"><br>
+			<button type="submit" class="btn bg-info text-white">추가</button>
 		</form>
 		
 	</div>

@@ -16,17 +16,28 @@
 <body>
 	<div class="container">
 		<h1>공인중개사 정보</h1>
-		<hr>
-		<span class="font-weight-bold">ID</span>
-		<hr>
-		<span class="font-weight-bold">상호명</span>
-		<hr>
-		<span class="font-weight-bold">전화 번호</span>
-		<hr>
-		<span class="font-weight-bold">주소</span>
-		<hr>
-		<span class="font-weight-bold">등급</span>
-		<hr>
+		<table class="table">
+			<tr>
+				<th>ID</th>
+				<td>${realtor.id }</td>
+			</tr>
+			<tr>
+				<th>상호명</th>
+				<td>${realtor.office }</td>
+			</tr>
+			<tr>
+				<th>전화 번호</th>
+				<td>${realtor.phoneNumber }</td>
+			</tr>
+			<tr>
+				<th>주소</th>
+				<td>${realtor.address }</td>
+			</tr>
+			<tr>
+				<th>등급</th>
+				<td>${realtor.grade }</td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>
